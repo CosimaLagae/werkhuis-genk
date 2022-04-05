@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="script.js" defer></script>
+
     <title>Werkhuis</title>
 </head>
 <body>
@@ -14,23 +18,24 @@
 
        <div class="menu">
             <ul>
-                <li>Over ons</li>
-                <li>Geraas</li>
-                <li>Residentie</li>
-                <li>Contact</li>
+                <li> <a href="#overons">OVER ONS</a></li>
+                <li><a href="#geraas">GERAAS</a></li>
+                <li><a href="#residentie">RESIDENTIE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
        </div>
    </header>
 
    <main>
-    <div class="overons">
+    <div id="overons" class="overons">
+        <h1>HET WERKHUIS:</h1>
         <p>
             Het Werkhuis, een plek waar gewerkt, gerept en Geraasd kan worden, maar ook waar rust en vriendschap de fundering vormen om een goede sfeer te garanderen. Daar waar samenwerking en behulpzaamheid zich uiten in meesterwerken en inspirerende workshops en events een extensie van het leren aan LUCA zijn.
              
             Zo kunnen wij ons stralen doen uitstralen, zodat zij die de deuren van Het Werkhuis verlaten, de straten van Genk een glimlach na laten</p>
     </div>
-    <div class="geraas">
-        <img  src="img/Naamloos-31.png" alt="">
+    <div id="geraas" class="geraas">
+        <img  src="img/geraas-logo.png" alt="">
         <img src="img/geraas.png" alt="">
 
         <p>
@@ -43,9 +48,9 @@
         </p>
     </div>
 
-    <div class="residentie">
+    <div id="residentie" class="residentie">
         <div class="optie">
-            <h1>Residentie</h1>
+            <h1>RESIDENTIE</h1>
             <div>
                 <h2>Wat krijg je?</h2>
                 <ul>
@@ -63,10 +68,10 @@
                     <li>Taken uitvoeren als: shift openhouden tentoonstelling, beschikbaar zijn op open atelier dagen, onderhoud werkhuis, taken achter de schermen</li>
                 </ul>
             </div>
-            <button>Aanmelden</button>
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRQtGVyak3Oeiv-A1qU_uoXYfIN3NpT8jpFISkwEdPsmbo8A/viewform">Aanmelden</a></button>
         </div>
         <div class="optie">
-            <h1>Projectmatige Residentie</h1>
+            <h1>PROJECTMATIGE RESIDENTIE</h1>
             <div>
                 <h2>Wat krijg je?</h2>
                 <ul>
@@ -83,28 +88,40 @@
                     <li>Taken uitvoeren als: shift openhouden tentoonstelling, beschikbaar zijn op open atelier dagen, onderhoud werkhuis, taken achter de schermen</li>
                 </ul>
             </div>
-            <button>Aanmelden</button>
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSdwAwfq9M7jR5-OE3bBIsF0Eoj_lpZGQl20FPpqVv0Y1Vvm2A/viewform">Aanmelden</a></button>
         </div>
     </div>
     
-    <div class="contact">
-        <h1>BEZOEK ONS</h1>
+    <div id="contact" class="contact">
+        <h1>CONTACT</h1>
+        <p>werkhuisgenk@gmail.com</p>
+            <ul><li><a href="https://www.instagram.com/werkhuis.genk/"><img src="img/icons8-instagram.svg" alt=""></a></li><li><img src="img/icons8-facebook.svg" alt=""></li></ul>
+        <h1>Bezoek ons!</h1>
         <div>
-            <h2>adres</h2>
+            <h2>Adres</h2>
             <p>Rootenstraat 33, 3600 Genk</p>
         </div>
         <div>
-            <h2>openingsuren</h2>
+            <h2>Openingsuren</h2>
             <img src="img/openingsuren.png" alt="">
         </div>
-
+    </div>
+    <div id="map" class="map">
     </div>
 
-   </main>
-    
 
-    <footer>
-        <!-- partners -->
-    </footer>
+    <div id="partners" class="partners">
+        <h1>ONZE PARTNERS</h1>
+        <img src="img/download.png" alt="">
+        <img src="img/jeugd genk.png" alt="">
+        <img src="img/unizo_logo.jpeg" alt="">
+        <img src="img/logo z33.png" alt="">
+        <img src="img/luca_school_of_arts_v_png_0.png" alt="">
+        <img src="img/printkracht 10.png" alt="">
+        <img src="img/logo genk.png" alt="">
+
+    </div>
+   </main>
+
 </body>
 </html>
