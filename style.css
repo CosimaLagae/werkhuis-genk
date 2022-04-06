@@ -210,6 +210,9 @@ main{
 .contact img{
     margin-bottom: 5vh;
 }
+.openings{
+    width: 20vw;
+}
 .contact ul{
     display: flex;
     list-style-type: none;
