@@ -8,18 +8,19 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
     <script src="script.js" defer></script>
+    <script src="popup.js"></script>
 
     <title>Werkhuis</title>
 </head>
 <body>
     <img class="background" src="img/plattegrond.png" alt="">
-   <header>
     <img class="logo" src="./img/werkhuis-logo.png" alt="">
 
+   <header>
        <div class="menu">
             <ul>
-                <li> <a href="#overons">OVER ONS</a></li>
-                <li><a href="#geraas">GERAAS</a></li>
+                <li onclick="OpenModal()">OVER ONS</li>
+                <li onclick="OpenGeraas()"><a href="#geraas">GERAAS</a></li>
                 <li><a href="#residentie">RESIDENTIE</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -27,7 +28,8 @@
    </header>
 
    <main>
-    <div id="overons" class="overons">
+    <div id="overons" class="overons" >
+        <img class="close" src="img/close_black_24dp.svg" alt="" onclick="CloseModal()">
         <h1>HET WERKHUIS:</h1>
         <p>
             Het Werkhuis, een plek waar gewerkt, gerept en Geraasd kan worden, maar ook waar rust en vriendschap de fundering vormen om een goede sfeer te garanderen. Daar waar samenwerking en behulpzaamheid zich uiten in meesterwerken en inspirerende workshops en events een extensie van het leren aan LUCA zijn.
@@ -35,7 +37,8 @@
             Zo kunnen wij ons stralen doen uitstralen, zodat zij die de deuren van Het Werkhuis verlaten, de straten van Genk een glimlach na laten</p>
     </div>
     <div id="geraas" class="geraas">
-        <img  src="img/geraas-logo.png" alt="">
+
+        <img class="close2" onclick="CloseGeraas()" src="img/geraas-logo.png" alt="">
         <img src="img/geraas.png" alt="">
 
         <p>
@@ -47,7 +50,7 @@
         Tijdens onze zoektocht naar een atelier als gemeenschappelijke werkplaats kwamen er steeds meer dromen in onze hoofden. Wat nu als we een open atelier zouden kunnen maken? Als we er niet alleen onszelf, maar ook andere studenten of zelfs externen blij mee kunnen maken? Als we een culturele broedplaats uit kunnen bouwen waar creatievelingen elkaar ontmoeten?
         </p>
     </div>
-
+    
     <div id="residentie" class="residentie">
         <div class="optie">
             <h1>RESIDENTIE</h1>
@@ -90,8 +93,10 @@
             </div>
             <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSdwAwfq9M7jR5-OE3bBIsF0Eoj_lpZGQl20FPpqVv0Y1Vvm2A/viewform">Aanmelden</a></button>
         </div>
+        
     </div>
     
+
     <div id="contact" class="contact">
         <h1>CONTACT</h1>
         <p>werkhuisgenk@gmail.com</p>

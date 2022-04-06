@@ -16,7 +16,6 @@ a {
 
 header{
     position: fixed;
-
     z-index: 1;
 
 }
@@ -68,18 +67,19 @@ header{
 
 
 main{
+    width: 95vw;
     position: absolute;
-    width: 48vw;
-    margin-left: 50vw;
     margin-top: 20vh;
+    
 
 }
 .overons{
     width: 30vw;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5vw;
     padding: 1vh 3vw;
+
+    display: none;
+    position: absolute;
 
     background-color: white;
 
@@ -93,17 +93,27 @@ main{
 
 }
 
+.close{
+    width: 2vw;
+    fill: #1a9dd9;
+    position: absolute;
+
+    margin-left: 29vw;
+    margin-top: 3vh;
+
+}
+
 .overons h1{
     margin-top: 3vh;
     margin-bottom: 2vh;
 }
 
 .geraas{
+    position: absolute;
+    display: none;
     width: 30vw;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
     padding: 1vh 3vw;
+    margin-left: 60vw;
 
     background-color: white;
 
@@ -118,6 +128,13 @@ main{
 
 .geraas p {
     padding-bottom: 3vh;
+}
+
+.close2{
+    fill: #1a9dd9;
+
+    margin-top: 3vh;
+
 }
 
 .residentie{
@@ -221,7 +238,7 @@ main{
     
 }
 
-.contact svg{
+.contact img{
     fill: #1a9dd9;
     color: #1a9dd9;
 }
