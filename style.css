@@ -3,11 +3,28 @@
 
     color: #1a9dd9;
     font-family: Helvetica, sans-serif;
+
+}
+
+img { 
+    fill: #1a9dd9;
 }
 a {
     text-decoration: none;
 }
 
+h1{
+    font-family: "marola";
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
 
 .background{ 
     position: fixed;
@@ -37,10 +54,10 @@ header{
 }
 
 .menu li {
-    width: 7vw;
+    width: 8vw;
     margin-right: 2vw;
     margin-top: 4vh;
-    padding: 1vh 2.5vw ;
+    padding: 1vh 2vw ;
 
     text-align: center;
     background-color: white;
@@ -48,13 +65,16 @@ header{
     border-radius: 20px;
     box-shadow: 1px 1px 20px #1a9dd9;
 
+    font-family: "marola";
+    font-size: 1.5vw;
+
 }
 
 .menu li:hover{
-    width: 7vw;
+    width: 8vw;
     margin-right: 2vw;
     margin-top: 4vh;
-    padding: 1vh 2.5vw ;
+    padding: 1vh 2vw ;
 
     text-align: center;
 
@@ -64,7 +84,12 @@ header{
     border-radius: 20px;
     box-shadow: 1px 1px 20px #1a9dd9;
 
+    font-family: "marola";
+    font-size: 1.5vw;
+
 }
+
+
 
 
 main{
@@ -80,6 +105,8 @@ main{
     margin-left: auto;
     margin-right: auto;
     padding: 1vh 3vw;
+
+    text-align: center;
 
     background-color: white;
 
@@ -105,6 +132,8 @@ main{
     margin-right: auto;
     padding: 1vh 3vw;
 
+    text-align: center;
+
     background-color: white;
 
     border-radius: 20px;
@@ -112,8 +141,15 @@ main{
 
 }
 
-.geraas img{
+.geraasfoto{
     width: 30vw;
+}
+
+.geraaslogo{
+    margin-top: 3vh;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .geraas p {
@@ -133,9 +169,14 @@ main{
     box-shadow: 1px 1px 20px #1a9dd9;
 }
 
+.residentie li {
+    font-family: 'Poppins', sans-serif;
+}
+
 .optie{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .optie h1{
     width: 39vw;
@@ -160,6 +201,7 @@ main{
     
     background-color: white;
 
+    font-family: 'Poppins', sans-serif;
 
     border-radius: 20px;
     border-color: white;
@@ -175,6 +217,9 @@ main{
     margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
+
+    font-family: 'Poppins', sans-serif;
+
 
     padding: 1vh 2vw;
     background-color: #1a9dd9;
@@ -212,6 +257,7 @@ main{
 }
 .openings{
     width: 20vw;
+    margin-top: 1vh;
 }
 .contact ul{
     display: flex;
@@ -262,6 +308,8 @@ main{
     border-radius: 20px;
     box-shadow: 1px 1px 20px #1a9dd9; 
     
+    text-align: center;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

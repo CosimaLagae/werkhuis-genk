@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
     <script src="script.js" defer></script>
@@ -14,29 +18,29 @@
 <body>
     <img class="background" src="img/plattegrond.png" alt="">
    <header>
-    <img class="logo" src="./img/werkhuis-logo.png" alt="">
+    <img class="logo" src="./img/WERKHUIS_Logo.svg" alt="">
 
        <div class="menu">
             <ul>
-                <li> <a href="#overons">OVER ONS</a></li>
-                <li><a href="#geraas">GERAAS</a></li>
-                <li><a href="#residentie">RESIDENTIE</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <a href="#overons"><li>  OVER ONS</li></a>
+                <a href="#geraas"><li>GERAAS</li></a>
+                <a href="#residentie"><li>RESIDENTIE</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
             </ul>
        </div>
    </header>
 
    <main>
     <div id="overons" class="overons">
-        <h1>HET WERKHUIS:</h1>
+        <h1>WERKHUIS</h1>
         <p>
             Het Werkhuis, een plek waar gewerkt, gerept en Geraasd kan worden, maar ook waar rust en vriendschap de fundering vormen om een goede sfeer te garanderen. Daar waar samenwerking en behulpzaamheid zich uiten in meesterwerken en inspirerende workshops en events een extensie van het leren aan LUCA zijn.
              
             Zo kunnen wij ons stralen doen uitstralen, zodat zij die de deuren van Het Werkhuis verlaten, de straten van Genk een glimlach na laten</p>
     </div>
     <div id="geraas" class="geraas">
-        <img  src="img/geraas-logo.png" alt="">
-        <img src="img/geraas.png" alt="">
+        <img class="geraaslogo" src="img/GERAAS_Logo.svg" alt="">
+        <img class="geraasfoto" src="img/geraas-fotos.jpg" alt="">
 
         <p>
             
@@ -68,7 +72,7 @@
                     <li>Taken uitvoeren als: shift openhouden tentoonstelling, beschikbaar zijn op open atelier dagen, onderhoud werkhuis, taken achter de schermen</li>
                 </ul>
             </div>
-            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRQtGVyak3Oeiv-A1qU_uoXYfIN3NpT8jpFISkwEdPsmbo8A/viewform">Aanmelden</a></button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRQtGVyak3Oeiv-A1qU_uoXYfIN3NpT8jpFISkwEdPsmbo8A/viewform"><button>AANMELDEN</button></a>
         </div>
         <div class="optie">
             <h1>PROJECTMATIGE RESIDENTIE</h1>
@@ -88,7 +92,7 @@
                     <li>Taken uitvoeren als: shift openhouden tentoonstelling, beschikbaar zijn op open atelier dagen, onderhoud werkhuis, taken achter de schermen</li>
                 </ul>
             </div>
-            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSdwAwfq9M7jR5-OE3bBIsF0Eoj_lpZGQl20FPpqVv0Y1Vvm2A/viewform">Aanmelden</a></button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwAwfq9M7jR5-OE3bBIsF0Eoj_lpZGQl20FPpqVv0Y1Vvm2A/viewform"><button>AANMELDEN</button></a>
         </div>
     </div>
     
@@ -103,7 +107,7 @@
         </div>
         <div>
             <h2>Openingsuren</h2>
-            <img class="openings" src="img/openingsuren.png" alt="">
+            <img class="openings" src="img/openingsuren.svg" alt="">
         </div>
     </div>
     <div id="map" class="map">
