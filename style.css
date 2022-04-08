@@ -30,7 +30,21 @@ p{
 
 .background{ 
     position: fixed;
+}
 
+.overlay{
+    z-index: 2;
+    position: fixed;
+    padding: 5vh 5vw;
+
+    width: 85vw;
+    height: 100vh;
+}
+
+.overlay img{
+    width: 10vw;
+    position: absolute;
+    
 }
 
 header{
