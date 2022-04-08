@@ -24,6 +24,8 @@ h2 {
 
 p{
     font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+
 }
 
 .background{ 
@@ -257,6 +259,7 @@ main{
 }
 .openings{
     width: 20vw;
+    height: 25vh;
     margin-top: 1vh;
 }
 .contact ul{
@@ -291,7 +294,7 @@ main{
     background-image: url('img/werkhuis-logo.png');
     background-size: cover;
     width: 2vw;
-    height: 4vh;
+    height: 3vh;
     cursor: pointer;
 }
 
