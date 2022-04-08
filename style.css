@@ -248,33 +248,35 @@ main{
 
     text-align: center;
 }
-.contact h2{
-    margin-top: 5vh;
-}
 .contact h1{
     margin-top: 3vh;
 }
 .contact img{
     margin-bottom: 5vh;
 }
+
+.contact ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    fill: #1a9dd9;
+
+    padding: 0;    
+}
+
+.contact img{
+    fill: #1a9dd9;
+    color: #1a9dd9;
+}
+.oh2{
+    margin-top: 3vh;
+}
 .openings{
     width: 20vw;
     height: 25vh;
     margin-top: 1vh;
 }
-.contact ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    margin-top: 2vh;
-    
-}
-
-.contact svg{
-    fill: #1a9dd9;
-    color: #1a9dd9;
-}
-
 .map{
     width: 30vw;
     height: 30vh;
@@ -319,7 +321,8 @@ main{
 }
 
 .partners img{
-    width: 15%;
+    width: 20%;
+    height: 20%;
     padding: 3vh 3vw;
 }
 .partners h1{
