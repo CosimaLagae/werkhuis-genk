@@ -6,11 +6,11 @@ function CloseModal() {
 }
 
             
-function Prep(){
+/* function Prep(){
     window_Height = window.innerHeight;
     window_Width = window.innerWidth;
     
-    image_Element = document.getElementById("img");
+    image_Element = document.getElementsById("img");
     image_Height = image_Element.clientHeight;
     image_Width = image_Element.clientWidth;
     
@@ -27,4 +27,4 @@ function moveImage(){
     
     image_Element.style.top = randNum_V + "px";
     image_Element.style.left = randNum_H + "px";
-}
+}  */

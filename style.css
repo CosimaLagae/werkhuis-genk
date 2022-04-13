@@ -30,20 +30,44 @@ p{
 
 .background{ 
     position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 .overlay{
     z-index: 2;
     position: fixed;
-    padding: 5vh 5vw;
+    padding: 8vh 5vw;
 
-    width: 85vw;
+    width: 89vw;
     height: 100vh;
+
+    background-color: #1a9dd94c;    
+
+}
+
+.overlay ul{
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+
+}
+.overlay li {
+    height: 40vh;
+    margin-bottom: 5vh;
 }
 
 .overlay img{
-    width: 10vw;
-    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #1a9dd9
+
     
 }
 
