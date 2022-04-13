@@ -10,9 +10,6 @@ body{
     overflow: overlay;
 }
 
-img { 
-    fill: #1a9dd9;
-}
 a {
     text-decoration: none;
 }
@@ -150,9 +147,6 @@ header{
 
 }
 
-
-
-
 main{
     position: absolute;
     width: 100vw;
@@ -164,8 +158,9 @@ main{
     width: 2vw;
     position: absolute;
 
-    margin-left: 29vw;
+    margin-left: 14vw;
     margin-top: 3vh;
+
 
 }
 
@@ -188,6 +183,8 @@ svg{
     border-radius: 20px;
     box-shadow: 1px 1px 20px #1a9dd9;
 
+    z-index: 1;
+
 }
 .overons p {
     text-align: center;
@@ -205,7 +202,8 @@ svg{
     margin-right: auto;
     padding: 1vh 3vw;
 
-    /* position: absolute; */
+    display: none;
+    position: absolute;
 
 
     text-align: center;
