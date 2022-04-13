@@ -6,6 +6,10 @@
 
 }
 
+body{
+    overflow: overlay;
+}
+
 img { 
     fill: #1a9dd9;
 }
@@ -29,23 +33,22 @@ p{
 
 /* Scrollbar Styling */
 body::-webkit-scrollbar {
-    width: 15.5px;
-    background-color: #1a9dd9;
-    border-radius: 10px;
-    border-style: solid;
-  }
+  background-color: transparent;  
+  border-radius: 10px;
+  width: 15.5px;
+}
   
-  body::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #1a9dd9; 
-  }
+body::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #1a9dd9; 
+}
 
 .background{ 
     position: fixed;
