@@ -9,11 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="popup.js"></script>
     <script src="script.js" defer></script>
 
     <title>Werkhuis</title>
@@ -21,7 +18,7 @@
 <body>
     <img class="background" src="img/plattegrond.png" alt="">
 
-    <!-- <div id="overlay" onclick="CloseModal()" class="overlay">
+    <div id="overlay" onclick="CloseModal()" class="overlay">
 
         <ul>
             <li><img id="img" class="img" src="img/werk-cedric.jpg" alt=""></li>
@@ -34,7 +31,7 @@
             <li><img id="img" class="img" src="img/werk-sim.jpg" alt=""></li>
         </ul>
 
-    </div> -->
+    </div>
     <script src="overlay.js"></script>
 
    <header>
@@ -42,7 +39,7 @@
 
        <div class="menu">
             <ul>
-                <li onclick="OpenModal()">  OVER ONS</li>
+                <a href="#overons"><li>  OVER ONS</li></a>
                 <a href="#geraas"><li>GERAAS</li></a>
                 <a href="#residentie"><li>RESIDENTIE</li></a>
                 <a href="#contact"><li>CONTACT</li></a>
@@ -51,19 +48,13 @@
    </header>
 
    <main>
-    <div id="overons" class="overons" >
-        <span class="close" onclick="CloseModal()">
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-        </span>    
-
-
-        <h1>HET WERKHUIS:</h1>
+    <div id="overons" class="overons">
+        <h1>WERKHUIS</h1>
         <p>
             Het Werkhuis, een plek waar gewerkt, gerept en Geraasd kan worden, maar ook waar rust en vriendschap de fundering vormen om een goede sfeer te garanderen. Daar waar samenwerking en behulpzaamheid zich uiten in meesterwerken en inspirerende workshops en events een extensie van het leren aan LUCA zijn.
-              <br> <br>
+             
             Zo kunnen wij ons stralen doen uitstralen, zodat zij die de deuren van Het Werkhuis verlaten, de straten van Genk een glimlach na laten</p>
     </div>
-
     <div id="geraas" class="geraas">
         <img class="geraaslogo" src="img/GERAAS_Logo.svg" alt="">
         <img class="geraasfoto" src="img/geraas-fotos.jpg" alt="">
@@ -126,8 +117,8 @@
         <h1>CONTACT</h1>
         <p>werkhuisgenk@gmail.com</p>
             <ul>
-                <a href="https://www.instagram.com/werkhuis.genk/"><li><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="3vw" height="3vw">    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/></svg></li></a>
-                <li><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="3vw" height="3vw">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg></li>
+                <a href="https://www.instagram.com/werkhuis.genk/"><li><img src="img/icons8-instagram.svg" alt=""></li></a>
+                <li><img src="img/icons8-facebook.svg" alt=""></li>
             </ul>
         <h1>Bezoek ons!</h1>
         <div>
@@ -156,8 +147,29 @@
     </div>
    </main>
 
-
+   <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBC3WXo1QlhVxHyCU-qwyUoKcWJ5o-a2YY",
+      authDomain: "werkhuis-a4050.firebaseapp.com",
+      projectId: "werkhuis-a4050",
+      storageBucket: "werkhuis-a4050.appspot.com",
+      messagingSenderId: "566712694222",
+      appId: "1:566712694222:web:cafe286bfe3be0fb28279f",
+      measurementId: "G-JV5DFQKEY8"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
 </body>
 </html>
-

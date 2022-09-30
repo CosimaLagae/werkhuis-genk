@@ -10,6 +10,9 @@ body{
     overflow: overlay;
 }
 
+img { 
+    fill: #1a9dd9;
+}
 a {
     text-decoration: none;
 }
@@ -92,6 +95,7 @@ body::-webkit-scrollbar-thumb {
 
 header{
     position: fixed;
+
     z-index: 1;
 
 }
@@ -147,34 +151,22 @@ header{
 
 }
 
+
+
+
 main{
     position: absolute;
-    width: 100vw;
+    width: 48vw;
+    margin-left: 50vw;
     margin-top: 20vh;
-    z-index: 1;
-}
-
-.close{
-    width: 2vw;
-    position: absolute;
-
-    margin-left: 14vw;
-    margin-top: 3vh;
-
 
 }
-
-svg{
-    fill: #1a9dd9;
-}
-
 .overons{
     width: 30vw;
-    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1vh 3vw;
-
-    display: none;
-    position: absolute;
 
     text-align: center;
 
@@ -182,8 +174,6 @@ svg{
 
     border-radius: 20px;
     box-shadow: 1px 1px 20px #1a9dd9;
-
-    z-index: 1;
 
 }
 .overons p {
@@ -199,12 +189,10 @@ svg{
 
 .geraas{
     width: 30vw;
+    margin-top: 10vh;
+    margin-left: auto;
     margin-right: auto;
     padding: 1vh 3vw;
-
-    display: none;
-    position: absolute;
-
 
     text-align: center;
 
@@ -337,7 +325,7 @@ svg{
     padding: 0;    
 }
 
-.contact svg{
+.contact img{
     fill: #1a9dd9;
     color: #1a9dd9;
 }
