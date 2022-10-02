@@ -7,8 +7,21 @@
 }
 
 body{
+    width: 100vw;
     overflow: overlay;
+    background-image: url("img/plattegrond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
+
+/* .background{ 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+} */
+
 
 img { 
     fill: #1a9dd9;
@@ -50,11 +63,6 @@ body::-webkit-scrollbar-thumb {
   background: #1a9dd9; 
 }
 
-.background{ 
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-}
 
 .overlay{
     z-index: 2;
@@ -111,7 +119,7 @@ header{
 .menu ul {
     display: flex;
     list-style-type: none;
-    margin-left: 40vw;
+    margin-left: 51vw;
     
 }
 
@@ -334,7 +342,7 @@ main{
 }
 .openings{
     width: 20vw;
-    height: 25vh;
+    height: auto;
     margin-top: 1vh;
 }
 .map{
@@ -388,4 +396,291 @@ main{
 .partners h1{
     width: 100%;
     margin-top: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+    .overlay{
+        display: none;
+    }
+
+    img{
+        fill:#1a9dd9;
+    }
+
+    h1{
+        font-family: "marola";
+        font-size: 6vw;
+    }
+    
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.5vw;
+
+    }
+    
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vw;
+    }
+    li{
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vw;
+    }
+
+    header{
+        margin-top: 1vh;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        
+    }
+    .logo{
+        margin-top: 1vh;
+        margin-left: 5vw;
+        width: 15vw;
+        position: relative;
+    }
+
+    .menu ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: 3.5vw;
+        padding-left: 0;
+        
+    }
+    
+    .menu li {
+        width: 19vw;
+        margin-top: 0;
+        padding: 1vh 2vw ;
+    
+        text-align: center;
+        background-color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+        font-family: "marola";
+        font-size: 3.5vw;
+    
+    }
+    
+    .menu li:hover{
+        width: 15vw;
+        padding: 1vh 2vw ;
+    
+        text-align: center;
+    
+        background-color: #1a9dd9;
+        color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+        font-family: "marola";
+        font-size: 3.5vw;
+    
+    }
+    main{
+        position: absolute;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+    
+    }
+
+    .overons{
+        width: 65vw;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh 3vw;
+    
+        text-align: center;
+    
+        background-color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+    }
+    .overons p {
+        text-align: center;
+        margin-bottom: 2vh;
+    
+    }
+    
+    .overons h1{
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+    
+    .geraas{
+        width: 65vw;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh 3vw;
+    
+        text-align: center;
+    
+        background-color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+    }
+    
+    .geraasfoto{
+        width: 30vw;
+    }
+    
+    .geraaslogo{
+        margin-top: 3vh;
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .geraas p {
+        padding-bottom: 3vh;
+    }
+    
+    .residentie{
+        width: 65vw;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh 3vw;
+    
+        background-color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    }
+    
+    .residentie li {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .optie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .optie h1{
+        width: 100vw;
+        margin-top: 4vh;
+    
+        text-align: center;
+    }
+    .optie div{
+        margin-left: 2vw;
+        width: 90vw;
+        margin-top: 3vh;
+    }
+    .optie ul{
+        margin-top: 2vh;
+    }
+    
+    .optie button{
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh 2vw;
+        
+        background-color: white;
+    
+        font-family: 'Poppins', sans-serif;
+    
+        border-radius: 20px;
+        border-color: white;
+        color: #1a9dd9;
+        border-style: solid;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+        text-align: center;
+    }
+    
+    .optie button:hover{
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+    
+        font-family: 'Poppins', sans-serif;
+    
+    
+        padding: 1vh 2vw;
+        background-color: #1a9dd9;
+        border-radius: 20px;
+        border-color: #1a9dd9;
+        color: white;
+        border-style: solid;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+        text-align: center;
+    }
+    
+    .contact {
+        width: 65vw;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh 3vw;
+    
+        background-color: white;
+    
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    
+        text-align: center;
+    }
+
+    .contact img{
+        fill: #1a9dd9;
+        color: #1a9dd9;
+        margin-bottom: 1vh;
+    }
+    
+    .contact ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        fill: #1a9dd9;
+        margin: 0; 
+        height: auto;  
+    }
+    .contact li img{
+        height: 4vh;
+        fill: #1a9dd9;
+        color: #1a9dd9;
+    }
+
+    .oh2{
+        margin-top: 3vh;
+    }
+    .openings{
+        width: 50vw;
+        margin-top: 1vh;
+    }
+    .map{
+        width: 65vw;
+    
+    }
+
+    
+    .partners{
+        width: 65vw;
+    }
+    
+
+
 }
