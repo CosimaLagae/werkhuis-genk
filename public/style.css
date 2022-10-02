@@ -401,6 +401,12 @@ main{
 @media only screen and (max-width: 600px) {
     body{
         width: 100vw;
+        overflow: overlay;
+        background-image: url("img/plattegrond2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
     }
     .overlay{
         display: none;
