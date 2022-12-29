@@ -65,6 +65,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .overlay{
+    
     z-index: 2;
     position: fixed;
     padding: 8vh 5vw;
@@ -73,8 +74,9 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
 
     background-color: #1a9dd94c;  
-
 }
+
+/*  OPENINGSWEEKEND BANNER INSTEAD 
 
 .overlay ul{
     list-style-type: none;
@@ -89,17 +91,18 @@ body::-webkit-scrollbar-thumb {
     height: 40vh;
     margin-bottom: 5vh;
 }
+*/
 
 .overlay img{
     max-width: 100%;
     max-height: 100%;
 
-
     border-radius: 20px;
-    box-shadow: 2px 2px 20px #1a9dd9
+    box-shadow: 2px 2px 20px #1a9dd9;
 
+    margin-top: 12vh;
     
-}
+} 
 
 header{
     position: fixed;
@@ -169,6 +172,60 @@ main{
     margin-top: 20vh;
 
 }
+.clubderive{
+    margin-top: 5vh;
+    width: 36vw;
+    margin-left: 6vw;
+}
+
+.clubderive img{
+    width: 36vw;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #1a9dd9;
+}
+
+.knop{
+    display: flex;
+    justify-content: center;
+}
+
+.knop button{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    padding: 1vh 2vw;
+    
+    background-color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 20px;
+    border-color: white;
+    color: #1a9dd9;
+    border-style: solid;
+    box-shadow: 1px 1px 20px #1a9dd9;
+
+    text-align: center;
+}
+
+.knop button:hover{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Poppins', sans-serif;
+
+
+    padding: 1vh 2vw;
+    background-color: #1a9dd9;
+    border-radius: 20px;
+    border-color: #1a9dd9;
+    color: white;
+    border-style: solid;
+    box-shadow: 1px 1px 20px #1a9dd9;
+
+    text-align: center;
+}
 .overons{
     width: 30vw;
     margin-top: 5vh;
@@ -197,7 +254,6 @@ main{
 
 .geraas{
     width: 30vw;
-    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
     padding: 1vh 3vw;
@@ -216,14 +272,17 @@ main{
 }
 
 .geraaslogo{
-    margin-top: 3vh;
-    width: 25vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 36vw;
+    margin-left: -3vw;
+    margin-top: -1vh;
+    border-radius: 20px 20px 0 0;
+
+
 }
 
 .geraas p {
     padding-bottom: 3vh;
+    margin-top: 2vh;
 }
 
 .residentie{
@@ -499,6 +558,16 @@ main{
         margin-top: 5vh;
     
     }
+    .clubderive{
+        margin-top: 5vh;
+        margin-left: 14vw;
+    }
+    
+    .clubderive img{
+        width: 71vw;
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #1a9dd9;
+    }
 
     .overons{
         width: 65vw;
@@ -547,10 +616,8 @@ main{
     }
     
     .geraaslogo{
-        margin-top: 3vh;
-        width: 25vw;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: -3vw;
+        width: 71vw;
     }
     
     .geraas p {
