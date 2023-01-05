@@ -189,7 +189,7 @@ main{
 
 }
 
-.extralogo{
+.extra img{
     width: 36vw;
     margin-left: -3vw;
     margin-top: -1vh;
@@ -591,7 +591,23 @@ main{
         margin-top: 5vh;
     
     }
-    .clubderive{
+    .extra{
+        width: 65vw;
+        margin-top: 5vh;
+
+    }
+
+    .extra img{
+        width: 71vw;
+    
+    }
+    
+    .extra p {
+        padding-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    /* .clubderive{
         margin-top: 5vh;
         margin-left: 14vw;
     }
@@ -600,7 +616,7 @@ main{
         width: 71vw;
         border-radius: 20px;
         box-shadow: 1px 1px 20px #1a9dd9;
-    }
+    } */
 
     .overons{
         width: 65vw;
